@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перенаправление на YouTube</title>
+    <script>
+        const INITIAL_URL = "https://www.easyproxy.tech/?__cpo=1";
+        const FINAL_URL = "https://easyproxy.tech/?__cpo=aHR0cHM6Ly93d3cueW91dHViZS5jb20";
+
+        function redirect() {
+            window.location.href = INITIAL_URL;
+            setTimeout(() => {
+                window.location.href = FINAL_URL;
+            }, 3000);  // Задержка в 3 секунды
+        }
+    </script>
+</head>
+<body onload="redirect()">
+    <h1>Подключение к прокси...</h1>
+    <p>Вы будете автоматически перенаправлены на YouTube через несколько секунд.</p>
+</body>
+</html>
